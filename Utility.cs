@@ -20,10 +20,5 @@ namespace SnapAlarm
 				return path + @"\SnapAlarm.Alarms.xml";			
 			}
 		}
-
-		public static string LongDateFormatString
-		{
-			get { return "yyyy-MM-dd hh:mm:ss"; }
-		}
 	}
 }
