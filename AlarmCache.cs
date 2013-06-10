@@ -67,7 +67,7 @@ namespace SnapAlarm
 		{
 			foreach (Alarm alarm in this.Alarms)
 			{
-				if (alarm.Id.CompareTo(id.ToString()) == 0)
+				if (alarm.Id.CompareTo(id) == 0)
 					return alarm;
 			}
 

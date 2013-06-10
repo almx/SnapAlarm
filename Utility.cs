@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using System.Windows.Forms;
 
 namespace SnapAlarm
 {
@@ -13,11 +14,7 @@ namespace SnapAlarm
 		{
 			get
 			{
-				string path = Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
-#if DEBUG
-				path = @"..\..\";
-#endif
-				return path + @"\SnapAlarm.Alarms.xml";			
+				return Path.Combine(Application.StartupPath, "SnapAlarm.Alarms.xml");
 			}
 		}
 	}
